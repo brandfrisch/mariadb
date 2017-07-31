@@ -1,0 +1,28 @@
+---
+
+- name: Add mariadb repository key
+  apt_key:
+    id: '0xcbcb082a1bb943db'
+    keyserver: keyserver.ubuntu.com
+    state: present
+  register: mariadb_apt_key
+  tags:
+    - setup
+    - mariadb
+
+- name: Update keyring
+  when: mariadb_apt_key.changed
+  command: "apt-key update"
+  tags:
+    - setup
+    - mariadb
+    - skip_ansible_lint
+
+- name: Add mariadb repository
+  apt_repository:
+    repo: "{{ mysql_apt_repo }}"
+    update_cache: true
+    state: present
+  tags:
+    - setup
+    - mariadb

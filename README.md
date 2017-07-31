@@ -27,7 +27,6 @@ If you want to know what is tested through [molecule](https://molecule.readthedo
 - `playbook.yml` for what is being run in the test
 - `tests/test_default.yml` for the [goss](https://goss.rocks) verfier
 
-
 Quote
 ========
 In the words of Eleanor Roosevelt:

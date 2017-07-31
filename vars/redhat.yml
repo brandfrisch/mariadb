@@ -1,11 +1,5 @@
 ---
 
-# mysql_packages:
-#   - mariadb-server
-#   - python-mysqldb
-#   - mysql-utilities
-#   - ca-certificates
-
 mysql_packages:
   - MariaDB
   - MariaDB-server

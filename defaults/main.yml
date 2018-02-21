@@ -7,3 +7,16 @@ mysql_remove_databases: []
 mysql_schema_files: []
 
 mysql_additional_packages: []
+
+mysql_packages:
+  - mariadb-server
+  - python-mysqldb
+  - mysql-utilities
+  - mytop
+  - mysqltuner
+  - ca-certificates
+
+mysql_apt_repo: 'deb http://ftp.hosteurope.de/mirror/mariadb.org/repo/10.2/ubuntu xenial main'
+
+mysql_config_files:
+  - { src: 'my.cnf.j2', dest: '/etc/mysql/my.cnf' }

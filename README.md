@@ -1,4 +1,4 @@
-mariadb [![Build Status](https://travis-ci.org/brandfrisch/mariadb.svg?branch=master)](https://travis-ci.org/brandfrisch/mariadb)
+mariadb
 =========
 
 This is a rule to setup mariadb on a unix system

@@ -1,9 +1,0 @@
----
-
-- name: Add official MariaDB repository
-  yum_repository:
-    name: MariaDB
-    description: Official MariaDB repository
-    baseurl: "http://yum.mariadb.org/10.2/centos6-amd64"
-    gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
-    gpgcheck: yes
